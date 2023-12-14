@@ -1,8 +1,8 @@
 # Keep Notes Clone
 
-A simple clone of Google Keep built using React.
-This is just intial design .will update design and functionality
-version 1:
+**Version 1: Initial Design**
+
+A simple clone of Google Keep built using React. This is the first version, showcasing the initial design. Future updates will include improvements to both design and functionality.
 ![Keep Notes Clone](https://github.com/pranavlonari/Keep-Notes-Clone/blob/master/images/v1.png)
 
 
