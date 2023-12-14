@@ -1,5 +1,3 @@
-# Ignore the images folder
-/images
 
 # Ignore build artifacts
 /build
