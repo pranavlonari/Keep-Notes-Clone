@@ -1,5 +1,9 @@
 # Keep Notes Clone
 
+**Version 3: Design Update and Component Enhancements**
+A simple clone of Google Keep built using React, with improvements in design and added components.
+![Keep Notes Clone](./images/v3.png)
+
 **Version 2: Design Update and Component Enhancements**
 
 A simple clone of Google Keep built using React, with improvements in design and added components.
