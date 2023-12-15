@@ -39,3 +39,13 @@ Keep Notes Clone is a web application created with React that emulates the basic
    git clone https://github.com/yourusername/Keep-Notes-Clone.git
    cd Keep-Notes-Clone
    ```
+
+2. Dependencies:
+
+   ```bash
+    react
+    react-dom
+    react-scripts
+    material-ui/core
+    material-ui/icons
+   ```
