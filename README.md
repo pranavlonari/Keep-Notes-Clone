@@ -1,5 +1,18 @@
 # Keep Notes Clone
 
+
+## Final Version : Design Update and Component Enhancements
+
+A simple clone of Google Keep built using React, with improvements in design and added components.
+![Keep Notes Clone](./images/Final.png)
+
+## Features
+
+- **Material UI Icons:** Updated the design by incorporating Material UI icons for a more modern and cohesive look.
+
+- **Zoom and FAB from Material UI:** Applied Material UI's Zoom component for a smoother user experience and added Material UI Floating Action Buttons (FAB) for quick actions.
+
+
 **Version 3: Design Update and Component Enhancements**
 A simple clone of Google Keep built using React, with improvements in design and added components.
 ![Keep Notes Clone](./images/v3.png)
