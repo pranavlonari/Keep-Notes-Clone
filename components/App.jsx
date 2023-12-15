@@ -6,11 +6,13 @@ import CreateArea from "./CreateArea";
 
 function App() {
   const [notes, setNotes] = useState([]);
+
   function addNote(newNote) {
     setNotes((prevNotes) => {
       return [...prevNotes, newNote];
     });
   }
+
   function deleteNote(id) {
     setNotes((prevNotes) => {
       return prevNotes.filter((noteItem, index) => {
@@ -18,6 +20,7 @@ function App() {
       });
     });
   }
+
   return (
     <div>
       <Header />
@@ -33,7 +36,6 @@ function App() {
           />
         );
       })}
-
       <Footer />
     </div>
   );
