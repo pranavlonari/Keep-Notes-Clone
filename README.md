@@ -49,3 +49,13 @@ Keep Notes Clone is a web application created with React that emulates the basic
     material-ui/core
     material-ui/icons
    ```
+
+## Screenshots:
+
+<div align="center">
+  <img src="./images/Final.png" alt="Final Design" width="400" />
+  <img src="./images/add-button.png" alt="add button" width="400" />
+   <img src="./images/delete.png" alt="delete button" width="400" />
+    <img src="./images/v2.png" alt="version 2" width="400" />
+     <img src="./images/v1.png" alt="version1" width="400" />
+</div>
