@@ -22,13 +22,24 @@ function CreateArea(props) {
     });
   }
 
-  function submitNote(event) {
-    props.onAdd(note);
-    setNote({
-      title: "",
-      content: "",
-    });
+  async function submitNote(event) {
     event.preventDefault();
+
+    if (!note.title.trim() && !note.content.trim()) {
+      props.onError("Note title or content is required.");
+      return;
+    }
+
+    try {
+      await props.onAdd(note);
+      props.onError("");
+      setNote({
+        title: "",
+        content: "",
+      });
+    } catch (error) {
+      props.onError(error.message || "Could not save note.");
+    }
   }
 
   function expand() {
@@ -56,7 +67,7 @@ function CreateArea(props) {
           rows={isExpanded ? 3 : 1}
         />
         <Zoom in={isExpanded}>
-          <Fab onClick={submitNote}>
+          <Fab type="submit" onClick={submitNote}>
             <AddIcon />
           </Fab>
         </Zoom>

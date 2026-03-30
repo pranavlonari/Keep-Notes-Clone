@@ -1,8 +1,13 @@
 import React from "react";
 import DeleteIcon from "@material-ui/icons/Delete";
 function Note(props) {
-  function handleClick() {
-    props.onDelete(props.id);
+  async function handleClick() {
+    try {
+      await props.onDelete(props.id);
+      props.onError("");
+    } catch (error) {
+      props.onError(error.message || "Could not delete note.");
+    }
   }
 
   return (
