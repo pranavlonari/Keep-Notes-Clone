@@ -4,8 +4,7 @@ import Footer from "./Footer";
 import Note from "./Note";
 import CreateArea from "./CreateArea";
 import AuthForm from "./AuthForm";
-
-const API_BASE_URL = process.env.REACT_APP_API_URL || "http://localhost:5000";
+import API_BASE_URL from "./config";
 
 function App() {
   const [notes, setNotes] = useState([]);
@@ -54,7 +53,7 @@ function App() {
         setToken(storedToken);
         setUser(meData.user);
         await fetchNotes(storedToken);
-      } catch (_error) {
+      } catch (_bootstrapError) {
         setError("Could not connect to backend.");
       } finally {
         setLoading(false);

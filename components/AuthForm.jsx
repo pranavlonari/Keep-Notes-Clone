@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-
-const API_BASE_URL = process.env.REACT_APP_API_URL || "http://localhost:5000";
+import API_BASE_URL from "./config";
 
 function AuthForm({ onAuthSuccess }) {
   const [isRegister, setIsRegister] = useState(false);

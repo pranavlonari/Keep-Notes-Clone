@@ -2,6 +2,11 @@
 # Ignore build artifacts
 /build
 /dist
+/node_modules
 
 # Ignore configuration files
 /config/*.config
+
+# Local backend data
+/data/*.db
+/data/*.db-*
