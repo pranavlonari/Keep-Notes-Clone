@@ -1,0 +1,30 @@
+{
+  "name": "keep-notes-clone",
+  "version": "1.0.0",
+  "description": "A simple clone of Google Keep built using React, with improvements in design and added components.\r ![Keep Notes Clone](./images/Final.png)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"No tests configured\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pranavlonari/Keep-Notes-Clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/pranavlonari/Keep-Notes-Clone/issues"
+  },
+  "homepage": "https://github.com/pranavlonari/Keep-Notes-Clone#readme",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "better-sqlite3": "^12.8.0",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.3.1",
+    "jsonwebtoken": "^9.0.3"
+  }
+}

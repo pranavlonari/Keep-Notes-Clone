@@ -43,6 +43,9 @@ Keep Notes Clone is a web application created with React that emulates the basic
 - Organize notes with labels
 - User-friendly drag-and-drop functionality
 - Responsive design for various screen sizes
+- Multi-user support with authentication (register/login)
+- Per-user private notes (each user can only access their own notes)
+- Backend REST API with persistent SQLite storage
 
 ## Installation
 
@@ -60,8 +63,46 @@ Keep Notes Clone is a web application created with React that emulates the basic
     react-dom
     react-scripts
     material-ui/core
-    material-ui/icons
+     material-ui/icons
+    ```
+
+3. Install backend dependencies:
+
+   ```bash
+   npm install
    ```
+
+## Run (2026 Multi-User Mode)
+
+### 1) Start backend API
+
+```bash
+npm start
+```
+
+Backend runs on: `http://localhost:5000`
+
+### 2) Start frontend
+
+Run your existing frontend React dev workflow and ensure it can reach:
+
+`http://localhost:5000`
+
+If needed, set:
+
+```bash
+REACT_APP_API_URL=http://localhost:5000
+```
+
+## Backend API
+
+- `POST /api/auth/register` → create user
+- `POST /api/auth/login` → login user
+- `GET /api/me` → current authenticated user
+- `GET /api/notes` → list current user notes
+- `POST /api/notes` → create note
+- `PUT /api/notes/:id` → update note (owned by current user)
+- `DELETE /api/notes/:id` → delete note (owned by current user)
 
 ## Screenshots:
 
